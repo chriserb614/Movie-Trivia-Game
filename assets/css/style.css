@@ -1,0 +1,54 @@
+body {
+    background-image: url('../images/reels.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header */
+#header{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+.jumbotron{
+    background-image: url('../images/intersection.png');
+    margin-top: 15px;
+}
+#startBtn, #startTimer, #submitBtn{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+#moonPic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+/* Questions */
+
+.card-body{
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background-image: url('../images/concrete.png');
+}
+#questionDiv{
+    font-family: 'Spectral SC', serif;
+}
+
+footer{
+    text-align: center;
+}
+/* End Card */
+.text-center{
+    font-family: 'Spectral SC', serif;
+    border-radius: 16px;
+    padding: 15px;
+    background-image: url('../images/concrete.png');
+}
+#charlie{
+    height: 240px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

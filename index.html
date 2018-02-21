@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Spectral+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+<!-- Header -->
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 id="header">Classic Movie Trivia!</h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div id="gif"></div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div id="startTimer">
+                        <button type="button" class="btn btn-primary btn-lg" id="startBtn">Start Game!</button>
+                    </div>
+                </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+<!-- Content -->
+<div id="maintext-container" class="container">
+    <!-- Questions Div -->
+    <form name="questionDiv" id="questionDiv">
+        
+        <!-- Question 1 -->
+        <div class="card-body">
+            
+            <h3>What year was "Gone With the Wind" released in theaters?</h3>
+            <br>
+                <input type="radio" name="question1" value="wrong">
+                1944
+                <br>
+                <input type="radio" name="question1" value="correct">
+                1939
+                <br>
+                <input type="radio" name="question1" value="wrong">
+                1955
+                <br>
+                <input type="radio" name="question1" value="wrong">
+                1927
+        </div>
+       
+        <!-- Question 2 -->
+        <div class="card-body"> 
+            
+            <h3>What Alfred Hitchcock film features a fight scene on top of Mt. Rushmore?</h3>
+            <br>
+                <input type="radio" name="question2" value="correct">
+                North By Northwest
+                <br>
+                <input type="radio" name="question2" value="wrong">
+                Psycho
+                <br>
+                <input type="radio" name="question2" value="wrong">
+                Vertigo
+                <br>
+                <input type="radio" name="question2" value="wrong">
+                Rear Window
+                <br>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="card-body">
+            
+            <h3>What is the only X-Rated film to win the Academy Award for Best Picture?</h3>
+            <br>
+                <input type="radio" name="question3" value="wrong">
+                Platoon
+                <br>
+                <input type="radio" name="question3" value="wrong">
+                The French Connection
+                <br>
+                <input type="radio" name="question3" value="wrong">
+                The Deer Hunter
+                <br>
+                <input type="radio" name="question3" value="correct">
+                Midnight Cowboy
+                <br>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="card-body"> 
+            
+            <h3>What actor played the titular "Luke" in the 1967 film "Cool Hand Luke"?</h3>
+            <br>
+                <input type="radio" name="question4" value="wrong">
+                Robert De Niro
+                <br>
+                <input type="radio" name="question4" value="correct">
+                Paul Newman
+                <br>
+                <input type="radio" name="question4" value="wrong">
+                Clint Eastwood
+                <br>
+                <input type="radio" name="question4" value="wrong">
+                Robert Redford
+                <br>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="card-body">
+            
+            <h3>In the 1944's Double Indemnity, what is profession of Walter Neff?</h3>
+            <br>
+                <input type="radio" name="question5" value="correct">
+                Insurance Salesman
+                <br>
+                <input type="radio" name="question5" value="wrong">
+                Lawyer
+                <br>
+                <input type="radio" name="question5" value="wrong">
+                Actor
+                <br>
+                <input type="radio" name="question5" value="wrong">
+                Detective
+                <br>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="card-body">
+            
+            <h3>The phrase "Rose Bud" is famously the last uttered words of what character?</h3>
+            <br>
+                <input type="radio" name="question6" value="wrong">
+                Michael Corleone
+                <br>
+                <input type="radio" name="question6" value="correct">
+                Charles Foster Kane
+                <br>
+                <input type="radio" name="question6" value="wrong">
+                General Patton
+                <br>
+                <input type="radio" name="question6" value="wrong">
+                Rhett Butler
+                <br>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="card-body">
+            
+            <h3>How was William Holden's character "Joe Gillis" killed in the 1950 film "Sunset Boulevard"?</h3>
+            <br>
+                <input type="radio" name="question7" value="correct">
+                Shot in the back
+                <br>
+                <input type="radio" name="question7" value="wrong">
+                Stabbed in the chest
+                <br>
+                <input type="radio" name="question7" value="wrong">
+                Poisoned
+                <br>
+                <input type="radio" name="question7" value="wrong">
+                Fell to his death
+                <br>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="card-body">
+            
+            <h3>Which silent comedian starred in 1931's "City Lights"?</h3>
+            <br>
+                <input type="radio" name="question8" value="wrong">
+                Buster Keaton
+                <br>
+                <input type="radio" name="question8" value="wrong">
+                Harold Lloyd
+                <br>
+                <input type="radio" name="question8" value="wrong">
+                Fatty Arbuckle
+                <br>
+                <input type="radio" name="question8" value="correct">
+                Charlie Chaplin
+                <br>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="card-body">
+            
+            <h3>In the 1974 film "Chinatown", what is the name of the character portrayed Jack Nicholson?</h3>
+            <br>
+                <input type="radio" name="question9" value="wrong">
+                Rhett Butler
+                <br>
+                <input type="radio" name="question9" value="correct">
+                J.J. "Jake" Gittes
+                <br>
+                <input type="radio" name="question9" value="wrong">
+                Phillip Marlowe
+                <br>
+                <input type="radio" name="question9" value="wrong">
+                Sam Spade
+                <br>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="card-body">
+            
+            <h3>How many films are in Francis Ford Coppola's "Godfather" collection?</h3>
+            <br>
+                <input type="radio" name="question10" value="wrong">
+                1
+                <br>
+                <input type="radio" name="question10" value="wrong">
+                2
+                <br>
+                <input type="radio" name="question10" value="correct">
+                3
+                <br>
+                <input type="radio" name="question10" value="wrong">
+                4
+                <br>
+        </div>
+        
+    </form>
+    <footer>
+        <button type="button" id = "submitBtn" class="btn btn-primary btn-lg">Submit</button>
+    </footer>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="./assets/JavaScript/app.js"></script>
+</body>
+</html>
