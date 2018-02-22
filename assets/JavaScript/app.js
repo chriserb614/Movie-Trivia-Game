@@ -4,7 +4,7 @@ var counter = {
     unanswered: 0
 };
 
-var number = 45;
+var number = 60;
 var intervalId;
 
 $(document).ready(function(){
